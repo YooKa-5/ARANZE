@@ -266,6 +266,9 @@
     <Compile Include="Assets\MoveScript.cs" />
     <Compile Include="Assets\Scripts\GameScene\JoyButton.cs" />
     <Compile Include="Assets\Scripts\GameScene\UnitychanAction.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\ScoreScene\Ranking.cs" />
+    <Compile Include="Assets\Scripts\ScoreScene\ScoreSceneManager.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
