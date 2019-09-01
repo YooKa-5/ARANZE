@@ -23,7 +23,7 @@ public class MoveScript : MonoBehaviour
     void Update()
     {
 
-        if()
+        if(true)
         {
             intResult = rnd.Next(5); // 0～４
             Destroy(bottomobj);
