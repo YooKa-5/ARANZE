@@ -264,7 +264,8 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\MoveScript.cs" />
-    <Compile Include="Assets\SCripts\UnitychanAction.cs" />
+    <Compile Include="Assets\Scripts\GameScene\JoyButton.cs" />
+    <Compile Include="Assets\Scripts\GameScene\UnitychanAction.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
