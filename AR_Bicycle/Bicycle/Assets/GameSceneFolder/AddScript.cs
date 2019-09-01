@@ -29,12 +29,20 @@ public class AddScript : MonoBehaviour
                 Vector3.Dot(Camera.main.transform.position - hit.Pose.position, hit.Pose.rotation * Vector3.up) > 0)
             {
                 andy.transform.position = hit.Pose.position;
-                andy.transform.rotation = hit.Pose.rotation;
+                //andy.transform.rotation = hit.Pose.rotation;
                 andy.transform.Rotate(0, 180, 0, Space.Self);
                 var anchor = hit.Trackable.CreateAnchor(hit.Pose);
                 andy.transform.parent = anchor.transform;
-                Destroy(this);
+                //Component.Destroy(this);
             }
         }
     }
 }
+
+
+
+
+
+
+
+
