@@ -68,6 +68,7 @@ public class Ranking : MonoBehaviour
         {
             int stack = scoreR[i];
             scoreR[i] = highScore;
+            int z = i;
             for (i+=1; i < 4; i++)
             {
                 scoreR[i] = stack;
@@ -77,7 +78,7 @@ public class Ranking : MonoBehaviour
 
             _unitychan.GetComponent<Animator>().SetBool("glad", true);
 
-            ThisIsYou.transform.localPosition = new Vector3(-200, 260 - i * 80, 0);
+            ThisIsYou.transform.localPosition = new Vector3(-200, 260 - z * 80, 0);
             ThisIsYou.SetActive(true);
         }
         else

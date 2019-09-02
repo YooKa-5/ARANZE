@@ -7,10 +7,14 @@ using GoogleARCore;
 public class AddScript : MonoBehaviour
 {
     public GameObject andy;
+    public GameObject unitychan;
+    public GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        unitychan.SetActive(false);
+        canvas.SetActive(false);
     }
 
     // Update is called once per frame

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreSceneManager : MonoBehaviour
 {
@@ -34,5 +35,15 @@ public class ScoreSceneManager : MonoBehaviour
     public void WriteScoreR(int a,int b)
     {
         scoreR[a] = b;
+    }
+
+    public void LoadTitle()
+    {
+        //SceneManager.LoadScene("Title");
+    }
+
+    public void RELoadGame()
+    {
+        SceneManager.LoadScene("GameScene");
     }
 }

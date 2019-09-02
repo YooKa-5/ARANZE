@@ -20,6 +20,17 @@ public class MoveScript : MonoBehaviour
     float world_y;
     float world_z;
 
+    public GameObject _unitychan;
+    UnitychanMove unitychanMove;
+
+    //台の移動速度
+    public float nowspeed = 0.0000001f;
+    public float acceleration = 0.00000002f;
+    public float time = 0;
+
+
+    public float unitychanSpeed=0;
+
 
     void Start()
     {
@@ -38,6 +49,9 @@ public class MoveScript : MonoBehaviour
         topobj = Instantiate((GameObject)Resources.Load("hasi_No3"), new Vector3(x+4.172f, y, z), Quaternion.Euler(world_x, world_y, world_z));
         middleobj = Instantiate((GameObject)Resources.Load("hasi_No2"), new Vector3(x+2.085f, y, z), Quaternion.Euler(world_x, world_y, world_z));
         bottomobj = andy;
+
+
+        unitychanSpeed = 0;
     }
 
     // Update is called once per frame
@@ -83,9 +97,17 @@ public class MoveScript : MonoBehaviour
 
 
         }
+
+
         //オブジェクトの移動
-        topobj.transform.Translate(-0.01f, 0, 0);
-        middleobj.transform.Translate(-0.01f, 0, 0);
-        bottomobj.transform.Translate(-0.01f, 0, 0);
+        time += Time.deltaTime;
+        nowspeed = time * acceleration*0.003f;
+
+        unitychanSpeed = nowspeed - (time * 0.001f * (_unitychan.GetComponent<Transform>().position.x - x));
+        //unitychanSpeed = nowspeed;
+        Debug.Log(nowspeed);
+        topobj.transform.Translate(-1*nowspeed, 0, 0);
+        middleobj.transform.Translate(-1*nowspeed, 0, 0);
+        bottomobj.transform.Translate(-1*nowspeed, 0, 0);
     }
 }

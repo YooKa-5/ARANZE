@@ -265,8 +265,9 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Scripts\GameScene\GameOver.cs" />
     <Compile Include="Assets\Scripts\GameScene\JoyButton.cs" />
-    <Compile Include="Assets\Scripts\GameScene\UnitychanAction.cs" />
+    <Compile Include="Assets\Scripts\GameScene\UnitychanMove.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\ScoreScene\Ranking.cs" />
     <Compile Include="Assets\Scripts\ScoreScene\ScoreSceneManager.cs" />
@@ -303,58 +304,58 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -379,6 +380,12 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -528,7 +535,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/LULU/Desktop/itijiku/ARANZE/AR_Bicycle/Bicycle/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/takishun/Desktop/UnityGame/Last/ARANZE/AR_Bicycle/Bicycle/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

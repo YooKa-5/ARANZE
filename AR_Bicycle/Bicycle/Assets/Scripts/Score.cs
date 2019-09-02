@@ -5,13 +5,13 @@ using UnityEngine;
 public class Score : MonoBehaviour
 {
 
-    public static int score;
+    public static int score=0;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 20;
+        
     }
 
     // Update is called once per frame

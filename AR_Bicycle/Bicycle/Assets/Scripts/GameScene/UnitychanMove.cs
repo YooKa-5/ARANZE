@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnityChanMove : MonoBehaviour
+public class UnitychanMove : MonoBehaviour
 {
 
     protected Joystick joystick;
     protected JoyButton joybutton;
+
+    public MoveScript _moveScript;
+    public ClickScript clickscript;
 
     public bool isJump;
     public bool isDoubleJump;
@@ -14,14 +17,15 @@ public class UnityChanMove : MonoBehaviour
     public float lastjoystickHori = 0;
     public float lastjoystickVer = 0;
 
+    private float time=0;
+
     //Rigidbodyを変数に入れる
     Rigidbody rb;
-    //移動スピード
-    public float speed = 3f;
-    public float acceleration = 0.2f;
+
+
 
     //ジャンプ力
-    public float thrust = 30;
+    public float thrust = 40;
     //2段ジャンプ力
     public float doubleThrust = 50;
     //Animatorを入れる変数
@@ -29,9 +33,9 @@ public class UnityChanMove : MonoBehaviour
     //ユニティちゃんの位置を入れる
     Vector3 playerPos;
     //地面に接触しているか否か
-    bool ground;
-
-
+    bool ground=true;
+    Vector3 lastRotate=new Vector3(0,0,0);
+    
 
     void Start()
     {
@@ -44,11 +48,13 @@ public class UnityChanMove : MonoBehaviour
 
 
         joystick = FindObjectOfType<Joystick>();
+
         joybutton = FindObjectOfType<JoyButton>();
     }
 
     void Update()
     {
+        time += Time.deltaTime;
         //地面に接触していると作動する
         if (ground)
         {
@@ -58,49 +64,58 @@ public class UnityChanMove : MonoBehaviour
             Vector3 direction = transform.position - playerPos;
 
             //移動距離が少しでもあった場合に方向転換
-            if (direction.magnitude > 0.001f)
+            if (direction.magnitude > 0.000000001f)
             {
                 //directionのX軸とZ軸の方向を向かせる
                 transform.rotation = Quaternion.LookRotation(new Vector3
                     (direction.x, 0, direction.z));
                 //走るアニメーションを再生
                 animator.SetBool("Running", true);
+
+                lastRotate = new Vector3(direction.x, 0, direction.z);
             }
             else
             {
+                transform.rotation = Quaternion.LookRotation(lastRotate);
                 //ベクトルの長さがない＝移動していない時は走るアニメーションはオフ
-                animator.SetBool("Running", false);
+                //animator.SetBool("Running", false);
             }
 
             //ユニティちゃんの位置を更新する
             playerPos = transform.position;
 
-
+            
         }
 
 
         var rigidbody = GetComponent<Rigidbody>();
-        if (joystick.Horizontal + joystick.Vertical == 0)
-        {
-            rigidbody.velocity = new Vector3((speed
-               * lastjoystickHori * Time.time * acceleration), rigidbody.velocity.y, speed * lastjoystickVer * Time.time * acceleration);
 
-        }
-        else if (joystick.Horizontal * joystick.Horizontal + joystick.Vertical * joystick.Vertical < 0.80)
+        if (clickscript.isMovescriptActive)
         {
 
-            rigidbody.velocity = new Vector3((speed * joystick.Horizontal * Time.time * acceleration), rigidbody.velocity.y, speed * joystick.Vertical * Time.time * acceleration);
 
+            if (joystick.Horizontal==0 && joystick.Vertical == 0)
+            {
+                rigidbody.velocity = new Vector3(-1* _moveScript.unitychanSpeed * 80 
+                   * lastjoystickHori, rigidbody.velocity.y, _moveScript.unitychanSpeed *-80* lastjoystickVer);
+
+            }
+            else if (joystick.Horizontal * joystick.Horizontal + joystick.Vertical * joystick.Vertical < 0.90)
+            {
+
+                rigidbody.velocity = new Vector3((_moveScript.unitychanSpeed* -80 * joystick.Horizontal), rigidbody.velocity.y, _moveScript.unitychanSpeed * -80*joystick.Vertical);
+
+
+            }
+            else
+            {
+                lastjoystickHori = joystick.Horizontal;
+                lastjoystickVer = joystick.Vertical;
+
+                rigidbody.velocity = new Vector3(-1* _moveScript.unitychanSpeed *80* joystick.Horizontal, rigidbody.velocity.y, _moveScript.unitychanSpeed*80 * -1*joystick.Vertical);
+            }
 
         }
-        else
-        {
-            lastjoystickHori = joystick.Horizontal;
-            lastjoystickVer = joystick.Vertical;
-            rigidbody.velocity = new Vector3((speed * joystick.Horizontal * Time.time * acceleration), rigidbody.velocity.y, speed * joystick.Vertical * Time.time * acceleration);
-        }
-
-
 
         //jump
         if (!isJump && joybutton.Pressed)
