@@ -15,11 +15,14 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -63,35 +66,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10244}
     - Class: 114
-      Script: {instanceID: 10318}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10506}
+      Script: {instanceID: 10766}
     - Class: 114
-      Script: {instanceID: 10768}
+      Script: {instanceID: 10876}
     - Class: 114
-      Script: {instanceID: 10878}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 11542}
     - Class: 114
-      Script: {instanceID: 11544}
+      Script: {instanceID: 11946}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12052}
+      Script: {instanceID: 12088}
     - Class: 114
-      Script: {instanceID: 12090}
+      Script: {instanceID: 12320}
     - Class: 114
-      Script: {instanceID: 12322}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12326}
+      Script: {instanceID: 12472}
     - Class: 114
-      Script: {instanceID: 12474}
+      Script: {instanceID: 12538}
     - Class: 114
-      Script: {instanceID: 12540}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 12858}
+      Script: {instanceID: 12960}
     - Class: 114
-      Script: {instanceID: 12962}
+      Script: {instanceID: 21024}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,12 +266,6 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkTransform
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ClickScript
   - hash:
       serializedVersion: 2
       Hash: 5d18903124844bf37abf2c84b5e470e0
@@ -1073,6 +1070,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickScript
   platform: 13
   scenePathNames:
   - Assets/GameSceneFolder/GameScene.unity
